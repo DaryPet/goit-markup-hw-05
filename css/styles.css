@@ -639,7 +639,9 @@ margin-bottom: 16px;
 
 /* FORM */
 
-
+.form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
 .form-items{
   margin-bottom: 8px;
 }
@@ -726,6 +728,17 @@ letter-spacing: 0.04em;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
+}
+.checkbox-own-wrapper {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
