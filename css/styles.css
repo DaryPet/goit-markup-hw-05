@@ -588,17 +588,19 @@ pointer-events: none;
   position: absolute;
   top: 50%;
   left:50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%) scale(1) ;
 width: 408px;
 min-height: 584px;
 border-radius: 4px;
 background: #FCFCFC;
 padding: 72px 24px 24px 24px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+padding: 72px 24px 24px 24px;
 }
  
 .modal_close_btn_icon{
-/* 
-  stroke: #2E2F42; */
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal_close_btn {
 background-color: #E7E9FC;
@@ -612,10 +614,17 @@ position: absolute;
 top:24px;
 right: 24px;
 fill: #2E2F42;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal_close_btn:hover {
+.modal_close_btn:hover,
+.modal_close_btn:focus {
   fill: #ffffff;
   background-color: #404BBF;
+  border: none;
 }
 .form-description{
   color: #2E2F42;
