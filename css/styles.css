@@ -684,8 +684,6 @@ header .container {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* 
-color: #8E8F99; */
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -725,8 +723,15 @@ color: #8E8F99; */
   align-items: center;
   justify-content: center;
   fill: transparent;
+  cursor: pointer;
 }
-.form-checkbox-input:checked {
+.checkbox-own-wrapper:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.visually-hidden:checked + .form-checkbox-label > .checkbox-own-wrapper {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
