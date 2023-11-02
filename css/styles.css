@@ -482,44 +482,63 @@ header .container {
   height: 80px;
   flex-shrink: 0;
 }
+.footer-contact-subscribe {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  width: 100%;
+  margin-bottom: 16px;
+}
 
 .contact_form {
   display: flex;
   margin-left: 80px;
+  gap:24px;
 }
 
-.contact_wrapper {
+/* .contact_wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
   /* margin-left: 80px; */
-}
-.contact_form_lbl {
+} */
+/* .contact_form_lbl {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32.02em;
   width: 100%;
-}
+} */
 
 .contact_form_input {
   width: 264px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: #2e2f42;
-  padding-top: 8px;
+  /* border: 1px solid #fff; */
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+  background-color: transparent; 
+  /* padding-top: 8px; */
   padding-left: 16px;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
   color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.contact_form_input::placeholder {
+color: #ffffff;
 }
 .subscribe_btn {
-  display: inline-flex;
-  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  /* padding: 8px 24px; */
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -528,8 +547,18 @@ header .container {
   margin-left: 24px;
   margin-top: 40px;
   border: none;
-}
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
 
+}
+.subscribe_btn_icon {
+  margin-left: 16px;
+}
 .subscribe_btn:hover,
 .subscribe_btn:focus {
   background: #404bbf;
@@ -687,9 +716,7 @@ letter-spacing: 0.04em;
 } */
 
 .form-checkbox-label {
-  color: var(--LIGHT-SLATE, #8E8F99);
-
-  /* Small Text */
+  color: #8E8F99;
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
