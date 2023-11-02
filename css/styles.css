@@ -510,8 +510,8 @@ header .container {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.32.02em;
-  width: 100%;
+  /* letter-spacing: 0.32.02em;
+  width: 100%; */
 } */
 
 .contact_form_input {
@@ -519,12 +519,8 @@ header .container {
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
-  /* border: 1px solid #fff; */
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   background-color: transparent; 
-  /* padding-top: 8px; */
   padding-left: 16px;
-  /* padding-bottom: 8px; */
   color: #ffffff;
   font-size: 12px;
   line-height: 1.5; 
@@ -547,7 +543,7 @@ color: #ffffff;
   margin-left: 24px;
   margin-top: 40px;
   border: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
